@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About Us</title>
+</head>
+<body>
+  <h1>About Us</h1>
+  <p>Welcome to our website! We are [Organization Name], and our goal is to [briefly describe the purpose or mission of the organization]. We strive to [briefly describe what the organization does or provides].</p>
+  <p>At [Organization Name], we believe in [core values or beliefs], and we are committed to [any additional information about the organization].</p>
+  <p>Feel free to explore our website to learn more about what we do and how we can help you!</p>
+</body>
+</html>
+
+<div class="animated-text">
+  Your content goes here
+</div>
+<marquee behavior="alternate" direction="left">
+  <div class="animated-text">
+    Your content goes here
+  </div>
+</marquee>
+.animated-text {
+  font-size: 18px;
+  color: #ff6600;
+  font-weight: bold;
+  padding: 10px;
+  border: 2px solid #ff6600;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 2px 2px 5px #888888;
+  /* Add additional styles as per your preference */
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link>body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  .marquee-container {
+    overflow: hidden;
+    width: 100%;
+    height: 50px; /* Adjust as needed */
+    background-color: #f2f2f2; /* Adjust as needed */
+  }
+  
+  .marquee {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 10s linear infinite; /* Adjust animation duration as needed */
+  }
+  
+  @keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+  </link>
+  <title>Marquee Animation</title>
+</head>
+<body>
+  <div class="marquee-container">
+    <div class="marquee">
+      <span>YOUR CONTENT HERE</span>
+    </div>
+  </div>
+  <script src="script.js">// Optional: Add responsive behavior
+    window.addEventListener('resize', function() {
+      var marqueeContainer = document.querySelector('.marquee-container');
+      var marquee = document.querySelector('.marquee');
+      marquee.style.width = marqueeContainer.offsetWidth + 'px';
+    });
+    </script>
+</body>
+</html>
+
