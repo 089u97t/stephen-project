@@ -10,8 +10,19 @@ $(document).ready(function() {
     $('.work-experience').slideDown(1500); // Slide down animation for the work experience section
 });
 
+
 window.addEventListener('resize', function() {
     var marqueeContainer = document.querySelector('.marquee-container');
     var marquee = document.querySelector('.marquee');
     marquee.style.width = marqueeContainer.offsetWidth + 'px';
   });
+
+  const privacyPolicy = document.getElementById('privacy-policy');
+
+// Pause animation when end of text is reached
+privacyPolicy.addEventListener('animationiteration', () => {
+  const computedStyle = window.getComputedStyle(privacyPolicy, '::after');
+  if (computedStyle.width === '100%') {
+    privacyPolicy.style.animationPlayState = 'paused';
+  }
+});
