@@ -11,6 +11,7 @@ $(document).ready(function() {
 });
 
 
+
 window.addEventListener('resize', function() {
     var marqueeContainer = document.querySelector('.marquee-container');
     var marquee = document.querySelector('.marquee');

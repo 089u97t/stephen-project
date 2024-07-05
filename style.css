@@ -165,7 +165,7 @@ body {
     }
 
     h1 {
-      font-size: 1.5rem; /* Decrease font size of headings */
+      font-size: 1rem; /* Decrease font size of headings */
     }
 
     p {
@@ -175,6 +175,10 @@ body {
     .action-button {
       font-size: 0.8rem; /* Decrease font size of action button */
     }
+    .about-content{
+      flex-direction: column;
+    }
+    
   }
 
 
@@ -198,7 +202,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 100;
 }
 .logo{
   -webkit-animation-name: fadeInLeftBig;
@@ -323,7 +327,15 @@ svg text {
   .hamburger {
       display: flex;
   }
+  .navbar{
+    position: relative;
+    
+  }
 } 
+a{
+  text-decoration: none;
+  color: #000;
+}
   /* .hero-iphone15{
     height:80.20rem;
     background: url(image/WhatsApp_Image_2024-06-03_at_8.37.48_AM-removebg-preview.png);
@@ -781,7 +793,7 @@ svg text {
 
   /* Example styling for the about section */
   .about-section {
-      background-color: lightblue; /* Change the background color */
+      background-color: green; /* Change the background color */
       padding: 10px; /* Adjust the padding as needed */
   }
 
